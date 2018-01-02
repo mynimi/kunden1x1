@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Phase 4°
 title: Content Erstellung
 chapter_image: 04Workflow.jpg

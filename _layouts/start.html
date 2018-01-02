@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
     {% include header.html %}
-    {% include country-icons.html %}
+    {% include page-icons.html %}
 
-        <header class="country-header" style="background-image: url('media/img/{{ page.header-img }}')">
+        <header class="page-header" style="background-image: url('media/img/{{ page.header-img }}')">
             <div class="grid">
                 <div class="content">
                     <h1 class="title">{{ site.name }}</h1>
@@ -14,7 +14,7 @@
                         {% for item in pages_list %}
                           {% if group == null or item.group contains group %}
                           {% if page.url != item.url %}
-                                <a href="{{item.url  | remove: '/index.html' | prepend: site.baseurl }}" class="{% if item.bodyclass %} {{item.bodyclass}} {% endif %}{% if item.layout == 'country' %} thin {% endif %}">{{item.title}}</a><br>
+                                <a href="{{item.url  | remove: '/index.html' | prepend: site.baseurl }}" class="{% if item.bodyclass %} {{item.bodyclass}} {% endif %}{% if item.layout == 'page' %} thin {% endif %}">{{item.title}}</a><br>
                           {% endif %}      {% endif %}
                         {% endfor %}
                         {% assign pages_list = nil %}

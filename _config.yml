@@ -21,11 +21,6 @@ defaults:
     values:
       displaytitle: true
       exclude: false
-  -
-    scope:
-      path: ""
-      layout: "country"
-    values:
       meta_info: true
 sass:
     style: expanded

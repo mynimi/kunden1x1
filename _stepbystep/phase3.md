@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Phase 3°
 title: Sitemap und Wireframe-Erstellung
 chapter_image: 03Workflow.jpg

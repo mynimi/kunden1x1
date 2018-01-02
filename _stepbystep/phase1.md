@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Phase 1°
 title: Zielidentifikation
 chapter_image: 01Workflow.jpg

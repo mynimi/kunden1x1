@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Einleitung
 title: Rezept zum Webdesign Erfolg
 # chapter_image: chi.jpg

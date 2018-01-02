@@ -28,7 +28,7 @@ div[data-toggler="true"] {
     }
 }
 
-.country-header{
+.page-header{
     h1, h2, h3, h4, h5, h6{
         background: $lightgray;
         color: black-or-white($lightgray);
@@ -60,7 +60,7 @@ div[data-toggler="true"] {
         }
     }
 
-    .country-block{
+    .page-block{
         .#{$l}{
             h2{
                 display: inline-block;
@@ -73,7 +73,7 @@ div[data-toggler="true"] {
         background: $c !important;
     }
     .#{$l} {
-        .country-header{
+        .page-header{
             h1, h2, h3, h4, h5, h6{
                 background: $c;
                 color: black-or-white($c);

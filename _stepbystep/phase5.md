@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Phase 5°
 title: Visuelle Elemente
 chapter_image: 05Workflow.jpg

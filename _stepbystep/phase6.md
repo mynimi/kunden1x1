@@ -1,5 +1,5 @@
 ---
-country: stepbystep
+page: stepbystep
 subject: Phase 6°
 title: Testen
 chapter_image: 06Workflow.jpg

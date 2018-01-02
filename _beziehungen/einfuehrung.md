@@ -1,5 +1,5 @@
 ---
-country: Kundenbeziehungen
+page: Kundenbeziehungen
 subject: Pflegehinweise
 title: Tipps und Tricks zum Kundenumgang
 order: 1

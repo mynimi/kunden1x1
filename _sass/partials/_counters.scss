@@ -2,7 +2,7 @@ body {
     // counter-reset: paragraph page-title chapter-title sidestory;
 }
 .content p,
-.country-block p {
+.page-block p {
     position: relative;
     // &:before {
     //     position: absolute;
@@ -49,7 +49,7 @@ body {
 //         font-size: .6em;
 //         text-align: right;
 //
-//         .country &{
+//         .page &{
 //             opacity: .9;
 //         }
 //     }

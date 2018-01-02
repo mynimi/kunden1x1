@@ -91,21 +91,21 @@ $(document).ready(function() {
         }
     });
 
-    $('.country-block div:not(.world)').addClass('hidden');
+    $('.page-block div:not(.world)').addClass('hidden');
     $('.indexes span.world').show();
 
     $('#map g').click(function(){
         var c = $(this).attr('id');
         $('#map g').removeClass('active');
         $(this).addClass('active');
-        $('.country-block div:not(.hidden)').addClass('hidden');
-        $('.country-block .'+c).removeClass('hidden');
+        $('.page-block div:not(.hidden)').addClass('hidden');
+        $('.page-block .'+c).removeClass('hidden');
         $('.bar').each(function(){
-            var b = $(this).find('.country');
+            var b = $(this).find('.page');
             var info = b.data(c);
             b.css('width', info+'%');
             b.attr('class', '')
-            b.attr('class', c + ' fill country');
+            b.attr('class', c + ' fill page');
             if(b.data(c+'-number')){
                 $(this).find('.number').text(b.data(c+'-number'));
             } else{

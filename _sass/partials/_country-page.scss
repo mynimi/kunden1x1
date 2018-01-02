@@ -1,6 +1,6 @@
-.country-header{
+.page-header{
     width: 100%;
-    height: $country-header-height;
+    height: $page-header-height;
     background-position: top center;
     background-size: cover;
     position: relative;
@@ -88,7 +88,7 @@
 
 .img-overlay{
     width: 100%;
-    height: $country-header-height;
+    height: $page-header-height;
     position: absolute;
     top: 0;
     left: 0;
