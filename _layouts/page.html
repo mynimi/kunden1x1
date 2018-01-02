@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
     {% include header.html %}
-    {% include page-icons.html %}
 
         <header class="page-header" style="background-image: url('../media/img/{{ page.header-img }}')">
             {% include navigation.html %}
@@ -10,114 +9,6 @@
                     <h1 class="title">{{ page.title }}</h1>
                     {% if page.subtitle %}<br><h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
                 </div>
-                {% if page.meta_info == true %}
-                <div class="meta-info">
-                    {% if page.surface %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#land_{{page.title | downcase }}" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.surface }} km<sup>2</sup></h2><br>
-                        <h5>Fläche</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.population %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#population" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.population }}</h2><br>
-                        <h5>Einwohner</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.gdp %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#gdp" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>CHF {{ page.gdp }}</h2><br>
-                        <h5>BIP pro Kopf 2016 (nominal)</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.altitude %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#altitude" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.altitude }} m ü. M.</h2><br>
-                        <h5>Höhe der Hauptstadt</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.flight %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#plane" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.flight }} km</h2><br>
-                        <h5>Flugstrecke</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.cabrides %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#taxi" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.cabrides }}</h2><br>
-                        <h5>Taxifahrten</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.interviews %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#interview" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.interviews }} min</h2><br>
-                        <h5>Interviews</h5>
-                    </div>
-                    {% endif %}
-                    {% if page.hoehe %}
-                    <div class="meta-box">
-                        <div class="icon-wrapper">
-                            <div class="icon-wrap">
-                                <svg class="icon">
-                                  <use xlink:href="#altitude" />
-                                </svg>
-                            </div>
-                        </div>
-                        <h2>{{ page.hoehe }}</h2><br>
-                        <h5>Höhenmeter</h5>
-                    </div>
-                    {% endif %}
-                </div>
-                {% endif %}
             </div>
             <div class="img-overlay"></div>
         </header>
