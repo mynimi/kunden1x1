@@ -1,0 +1,62 @@
+.slider-wrap{
+    width: 100%;
+    position: relative;
+
+    .navigator{
+        position: absolute;
+        top: 50%;
+        font-size: 0;
+        width: 35px;
+        height: 35px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &.toggle-next{
+            right: 30px;
+            &:after{
+                content: '';
+                @include triangle-eqla(40px, right, white);
+            }
+
+            &:hover{
+                &:after{
+                    @include triangle-eqla(40px, right, black);
+                }
+            }
+        }
+        &.toggle-prev{
+            left: 30px;
+            &:after{
+                content: '';
+                @include triangle-eqla(40px, left, white);
+                position: absolute;
+                right: 0;
+            }
+
+            &:hover{
+                &:after{
+                    @include triangle-eqla(40px, left, black);
+                }
+            }
+        }
+    }
+}
+.slider{
+    @include paddinghack(100%, 16, 9, "div");
+
+    div{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: .3s all ease;
+
+        &.active{
+            opacity: 1;
+        }
+
+        img{
+            display: none;
+        }
+    }
+}

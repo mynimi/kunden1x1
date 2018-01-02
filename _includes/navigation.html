@@ -1,0 +1,22 @@
+<div class="navbar">
+    <span class="nav-toggle link">Menu</span>
+    {% include btt.html %}
+</div>
+
+<div class="menu">
+    <p><span class="nav-toggle">{% include close.html %}</span></p>
+    <nav>
+        {% assign pages_list = site.pages | sort:"group" %}
+        {% assign group = 'navigation' %}
+        {% for item in pages_list %}
+          {% if group == null or item.group contains group %}
+          {% if page.url == item.url %}
+                <a href="{{item.url  | remove: '/index.html'  | prepend: site.baseurl }}" class="active {% if item.bodyclass %} {{item.bodyclass}} {% endif %}{% if item.layout == 'country' %} thin {% endif %}">{{item.title}}</a><br>
+              {% else %}
+                <a href="{{item.url  | remove: '/index.html' | prepend: site.baseurl }}" class="{% if item.bodyclass %} {{item.bodyclass}} {% endif %}{% if item.layout == 'country' %} thin {% endif %}">{{item.title}}</a><br>
+          {% endif %}      {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </nav>
+</div>

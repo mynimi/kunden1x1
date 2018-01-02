@@ -1,0 +1,38 @@
+name: Schwierige Kunden für Anfänger
+author: Damian Schurtenberger, Jeremy Marugan, Myriam Frisano, Olivia Kasper
+favicon: #favicon image path (svg)
+url: http://code.halfapx.com
+baseurl: /kunden1x1
+encoding: utf-8
+plugins:
+    - jekyll-autoprefixer
+    - liquefy
+markdown: kramdown
+kramdown:
+  input: GFM
+# keep_files: [css/main.css, js/build/main.min.js]
+excerpt_separator: "<!-- more -->"
+permalink: /:title/
+defaults:
+  -
+    scope:
+      path: ""
+      layout: "page"
+    values:
+      displaytitle: true
+      exclude: false
+  -
+    scope:
+      path: ""
+      layout: "country"
+    values:
+      meta_info: true
+sass:
+    style: expanded
+collections:
+    beziehungen:
+        output: false
+    kunden:
+        output: false
+    stepbystep:
+        output: false

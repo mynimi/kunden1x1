@@ -1,0 +1,25 @@
+---
+# date:
+layout: country
+title: Step By Step
+subtitle: Webdesign Workflow
+group: navigation-02
+order: 2
+header-img: newspaper_v3.jpg
+bodyclass: stepbystep
+meta_info: false
+---
+{% assign stepbystep = site.stepbystep | sort: "order" %}
+{% for ch in stepbystep %}
+<section class="box chapter-{{ ch.subject }}" id="{{ ch.subject }}">
+    {% if ch.chapter_image %}
+        <div class="image grid" style="background-image: url(../media/img/{{ ch.chapter_image }});">
+        </div>
+    {% endif %}
+    <div class="content">
+        <span class="chapter-subject">{{ ch.subject }}</span>
+        <h1 class="chapter-title">{{ ch.title }}</h1>
+    </div>
+    {{ ch.content }}
+</section>
+{% endfor %}

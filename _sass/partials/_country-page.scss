@@ -1,0 +1,128 @@
+.country-header{
+    width: 100%;
+    height: $country-header-height;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+
+    .grid{
+        position: absolute;
+        @include flexbox(column, wrap, space-between, center);
+        max-height: 80vh;
+        top: 7vh;
+        z-index: 4;
+    }
+
+    .content{
+        max-width: 1200px;
+        width: 150%;
+
+        text-align: center;
+        color: white;
+
+        @media screen and (max-width: $title-break){
+          width: 100%;
+        }
+    }
+
+    .meta-info{
+        width: 100%;
+        // background: rgba(black, .3);
+        grid-column-start: 1;
+        grid-column-end: 4;
+        box-sizing: border-box;
+        @include flexbox(row, wrap, space-around, flex-start);
+        color: white;
+        // text-shadow: 0px 0px 2px rgba(black, .5);
+        text-align: center;
+        margin-top: 50px;
+
+        @media screen and (max-width: $sidestory-break){
+            transform: scale(.6);
+        }
+
+        .meta-box{
+            width: 25%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        h2{
+            text-transform: none;
+        }
+        h5{
+            font-weight: normal;
+            margin-top: 0;
+            line-height: 1;
+            // color: $lightgray;
+        }
+    }
+
+    .title{
+        position: relative;
+        font-size: 3em;
+        line-height: 1;
+        margin: 3px;
+        display: inline;
+
+        @media screen and (max-width: 800px){
+            font-size: 2em;
+        }
+    }
+
+    .subtitle{
+        position: relative;
+        top: 10px;
+        margin-top: 20px;
+        font-size: 2.5em;
+        line-height: 1;
+        margin: 3px;
+        font-weight: normal;
+        display: inline;
+
+        @media screen and (max-width: 800px){
+            font-size: 1.5em;
+        }
+    }
+
+}
+
+.img-overlay{
+    width: 100%;
+    height: $country-header-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-image: radial-gradient(rgba($blackish, .4) 50%, transparent 10%), radial-gradient(white 25%, transparent 10%);
+    background-size:5px 5px;
+    background-position: 0 0, 5px 5px;
+}
+
+section[class*="chapter"]{
+    margin-top: 2.5rem;
+}
+.chapter-subject{
+    display: block;
+    text-transform: $headings-text-transform;
+    font-weight: normal;
+    font-family: $headings-font;
+
+    + h1{
+        margin-top: 0;
+    }
+}
+
+.pagination{
+    width: 100%;
+    font-family: $headings-font;
+
+    a{
+        display: inline-block;
+    }
+    .prev{
+        text-align: left;
+    }
+    .next{
+        text-align: right;
+    }
+}
